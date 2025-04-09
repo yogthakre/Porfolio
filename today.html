@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brief description of the page">
+    <meta name="author" content="Yogendra Thakre">
+    <title>Developer Portfolio Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease, font-size 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 180px 0;
+            flex-wrap: wrap;
+        }
+
+        .firstSection>div {
+            width: 45%;
+            margin: 20px 0;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            line-height: 1.5;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: rgb(170, 107, 228);
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+            height:80vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .secondSection .vertical {
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+            line-height: 1.3;
+        }
+
+        .footer {
+            background-color: rgb(18, 18, 62);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin: 10px 0;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+            font-size: 0.9rem;
+
+            @media screen and (max-width:1400 px) {
+                body {
+                    background-color: red;
+                }
+                footer {
+                    display :none;
+                }
+                .box
+                {
+                    flex-direction:column;
+                }
+                .secondSection .vertical{
+                    height: unset;
+                }
+                .vertical-title ,.vertical-desc{
+                    left:45px;
+                }
+                .secondSection .box{
+                    width:50vw;
+                }
+                nav {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                } 
+                .firstSection {
+                    flex-direction: column-reverse;
+                }
+                .leftSection {
+                    width :100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .secondSection {
+                    max-width: 80vw;
+                    margin : auto;
+                    height: 141vh;
+                }
+                .rightSection {
+                    width :721 !important;
+                    display:flex;
+                    justify-content: center;
+                }
+                .rightSection img {
+                    width: 45vw;
+                    margin-bottom: 73px;
+                }
+                .image-top {
+                    top : 133px;
+                }
+                .secondSection {
+                    max-width: 80vw;
+                    margin: auto;
+                    height:80vh;
+                    display: flex;
+                    flex-direction:column;
+                    align-items: center;
+                }
+                body {
+                    min-width: fit-content;
+                }
+                .rightSection
+            }
+
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Yogendra's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                
+                <div></div>Hi, I am <span class="purple">Yogendra Thakre</span>.
+                <div>I am a Passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                   <a href="https://drive.google.com/file/d/1fO41m3h87W_ZEZRavLlcVm0NI8D4ahZF/view?usp=sharing"> <button class="btn">Download Resume</button></a>
+                   <a href="https://github.com/yogthakre"> <button class="btn">Visit GitHub</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="Developer Illustration">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <p class="text-gray">What I Have Done So Far</p>
+            <h1>Internship Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Developer.png" alt="HTML Developer Icon">
+                    <div class="vertical-title">AICTE Android Virtual Internship (April- June 2024)</div>
+                    <div class="vertical-desc">Based on Google Android Developer Course.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Developer.png" alt="HTML Developer Icon">
+                    <div class="vertical-title">AICTE Zero Trust Cloud Virtual Internship (Oct- Dec 2024)</div>
+                    <div class="vertical-desc">Based on Fundamental of Cyber Security Course.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Developer.png" alt="Node.js Developer Icon">
+                    <div class="vertical-title">AICTE Cloud Virtual Internship (Oct-Dec 2024)</div>
+                    <div class="vertical-desc"> Based on AWS academy Cloud Architecting</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>
+        <div class="footer-rights">
+            Copyright &#169; yogendrasportfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
